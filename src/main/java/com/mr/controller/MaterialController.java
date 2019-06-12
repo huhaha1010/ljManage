@@ -40,6 +40,7 @@ public class MaterialController {
 	@RequestMapping("/material/insertList")
 	public void insertList(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "jsonMaterialFile") MultipartFile file) {
 		JSONObject jsonObject = new JSONObject();
+		log.info("test");
 		log.info("开始读取素材json文件");
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		String date = simpleDateFormat.format(new Date());
