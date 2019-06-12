@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mr.mapper.MaterialMapper">
+  <resultMap id="BaseResultMap" type="com.mr.pojo.Material">
+      <id column="id" jdbcType="INTEGER" property="id" />
+      <result column="material_id" jdbcType="VARCHAR" property="materialId" />
+      <result column="material_name" jdbcType="VARCHAR" property="materialName" />
+      <result column="material_uploader_id" jdbcType="VARCHAR" property="materialUploaderId" />
+      <result column="material_icon" jdbcType="VARCHAR" property="materialIcon" />
+      <result column="material_price" jdbcType="DOUBLE" property="materialPrice" />
+      <result column="material_description" jdbcType="VARCHAR" property="materialDescription" />
+      <result column="material_download_num" jdbcType="INTEGER" property="materialDownloadNum" />
+      <result column="material_pw_quantity" jdbcType="INTEGER" property="materialPwQuantity" />
+      <result column="school_ip_num" jdbcType="VARCHAR" property="schoolIpNum" />
+      <result column="material_owner_id" jdbcType="VARCHAR" property="materialOwnerId" />
+      <result column="permission" jdbcType="INTEGER" property="permission" />
+      <result column="space" jdbcType="VARCHAR" property="space" />
+      <result column="material_tag" jdbcType="VARCHAR" property="materialTag" />
+      <result column="material_create_time" jdbcType="VARCHAR" property="materialCreateTime" />
+      <result column="material_upload_time" jdbcType="VARCHAR" property="materialUploadTime" />
+      <result column="catalog" jdbcType="VARCHAR" property="catalog" />
+      <result column="material_url" jdbcType="VARCHAR" property="materialUrl" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, material_id, material_name, material_uploader_id, material_icon, material_price,
+    material_description, material_download_num, material_pw_quantity, school_ip_num,
+    material_owner_id, permission, space, material_tag, material_create_time, material_upload_time,
+    catalog, material_url
+  </sql>
+  
+  <!-- 批量插入 -->
+  <insert id="insertList" parameterType="java.util.List">
+  	insert into material(material_id,material_name,material_uploader_id,material_icon,material_description,
+  	school_ip_num,material_owner_id,permission,space,material_tag,material_create_time,material_upload_time,
+  	catalog,material_url)
+  	values
+  	<foreach collection="list" item="item" separator="," index="index">
+  		(#{item.materialId,jdbcType=VARCHAR},#{item.materialName,jdbcType=VARCHAR},#{item.materialUploaderId,jdbcType=VARCHAR},
+        #{item.materialIcon,jdbcType=VARCHAR},#{item.materialDescription,jdbcType=VARCHAR},#{item.schoolIpNum,jdbcType=VARCHAR},
+        #{item.materialOwnerId,jdbcType=VARCHAR},#{item.permission,jdbcType=INTEGER},#{item.space,jdbcType=VARCHAR},
+        #{item.materialTag,jdbcType=VARCHAR},#{item.materialCreateTime,jdbcType=VARCHAR},#{item.materialUploadTime,jdbcType=VARCHAR},
+        #{item.catalog,jdbcType=VARCHAR},#{item.materialUrl,jdbcType=VARCHAR})
+  	</foreach>
+  </insert>
+</mapper>

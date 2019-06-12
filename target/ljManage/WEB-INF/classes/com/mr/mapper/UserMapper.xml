@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mr.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.mr.pojo.User">
+        <id column="user_id" property="userId" jdbcType="INTEGER"></id>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"></result>
+        <result column="user_pwd" property="userPwd" jdbcType="VARCHAR"></result>
+        <result column="user_phone" property="userPhone" jdbcType="VARCHAR"></result>
+        <result column="user_email" property="userEmail" jdbcType="VARCHAR"></result>
+        <result column="user_upload_works_num" property="userUploadWorksNum" jdbcType="INTEGER"></result>
+        <result column="user_upload_material_num" property="userUploadMaterialNum" jdbcType="INTEGER"></result>
+        <result column="user_purchase_quantity" property="userPurchaseQuantity" jdbcType="INTEGER"></result>
+        <result column="user_cost" property="userCost" jdbcType="DOUBLE"></result>
+        <result column="user_company_id" property="userCompanyId" jdbcType="INTEGER"></result>
+    </resultMap>
+    
+    <sql id="Base_Column_List">
+        user_id,user_name,user_pwd,user_phone,user_email,user_upload_works_num,user_upload_material_num,
+        user_purchase_quantity,user_cost,user_company_id
+    </sql>
+
+<!--    根据用户昵称查询用户信息-->
+    <select id="selectByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select 
+        <include refid="Base_Column_List"/>
+        from user
+        where user_name = #{userName,jdbcType=VARCHAR}
+    </select>
+
+<!--    根据用户邮箱查询用户信息-->
+    <select id="selectByUserEmail" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+        where user_email = #{userEmail,jdbcType=VARCHAR}
+    </select>
+
+<!--    插入用户-->
+    <select id="insertSelective" parameterType="com.mr.pojo.User">
+        insert into user (user_name,user_pwd,user_phone,user_email)
+        values (#{userName,jdbcType=VARCHAR},#{userPwd,jdbcType=VARCHAR},#{userPhone,jdbcType=VARCHAR},#{userEmail,jdbcType=VARCHAR})
+    </select>
+
+<!--    根据手机号查询用户信息-->
+    <select id="selectByUserPhone" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+        where user_phone = #{userPhone,jdbcType=VARCHAR}
+    </select>
+
+<!--    根据用户昵称、手机号或者邮箱和密码登录-->
+    <select id="selectByNamePhoneEmailAndPwd" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from user
+        where (user_name = #{attribute, jdbcType=VARCHAR}
+        or user_phone = #{attribute, jdbcType=VARCHAR}
+        or user_email = #{attribute, jdbcType=VARCHAR})
+        and user_pwd = #{userPwd, jdbcType=VARCHAR}
+    </select>
+
+<!--    根据用户id、手机号和密码查询用户-->
+    <select id="selectByIdPhonePwd" parameterType="com.mr.pojo.User" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+        where user_id = #{userId, jdbcType=INTEGER} and
+        user_phone = #{userPhone, jdbcType=VARCHAR} and
+        user_pwd = #{userPwd,jdbcType=VARCHAR}
+    </select>
+
+<!--    根据用户手机号修改密码-->
+    <update id="updatePwdByPhone" parameterType="java.lang.String">
+        update user
+        set user_pwd = #{userPwd,jdbcType=VARCHAR}
+        where user_phone = #{userPhone,jdbcType=VARCHAR}
+    </update>
+
+<!--    根据用户id、邮箱和密码查询用户-->
+    <select id="selectByIdEmailPwd" parameterType="com.mr.pojo.User" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user where user_id = #{userId,jdbcType=INTEGER} and
+        user_email = #{userEmail,jdbcType=VARCHAR} and
+        user_pwd = #{userPwd,jdbcType=VARCHAR}
+    </select>
+
+<!--    根据用户邮箱修改密码-->
+    <update id="updatePwdByEmail" parameterType="java.lang.String">
+        update user
+        set user_pwd = #{userPwd,jdbcType=VARCHAR}
+        where user_email = #{userEmail,jdbcType=VARCHAR}
+    </update>
+</mapper>

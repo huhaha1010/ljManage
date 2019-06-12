@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mr.mapper.WorksMapper">
+    <resultMap id="BaseResultMap" type="com.mr.pojo.Works">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="works_id" jdbcType="VARCHAR" property="worksId" />
+        <result column="works_name" jdbcType="VARCHAR" property="worksName" />
+        <result column="works_uploader_id" jdbcType="VARCHAR" property="worksUploaderId" />
+        <result column="works_price" jdbcType="DOUBLE" property="worksPrice" />
+        <result column="works_description" jdbcType="VARCHAR" property="worksDescription" />
+        <result column="works_download_num" jdbcType="INTEGER" property="worksDownloadNum" />
+        <result column="works_tpv" jdbcType="INTEGER" property="worksTpv" />
+        <result column="pw_quantity" jdbcType="INTEGER" property="pwQuantity" />
+        <result column="school_ip_num" jdbcType="VARCHAR" property="schoolIpNum" />
+        <result column="works_icon" jdbcType="VARCHAR" property="worksIcon" />
+        <result column="works_owner_id" jdbcType="VARCHAR" property="worksOwnerId" />
+        <result column="permission" jdbcType="INTEGER" property="permission" />
+        <result column="space" jdbcType="VARCHAR" property="space" />
+        <result column="works_create_time" jdbcType="VARCHAR" property="worksCreateTime" />
+        <result column="works_upload_time" jdbcType="VARCHAR" property="worksUploadTime" />
+        <result column="works_tag" jdbcType="VARCHAR" property="worksTag" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, works_id, works_name, works_uploader_id, works_price, works_description, works_download_num,
+        works_tpv, pw_quantity, school_ip_num, works_icon, works_owner_id, permission, space,
+        works_create_time, works_upload_time, works_tag
+    </sql>
+    <!-- 批量插入 -->
+    <insert id="insertList" parameterType="java.util.List">
+        insert into works(works_id,works_name,works_uploader_id,works_description,
+        school_ip_num,works_icon,works_owner_id,permission,space,works_create_time,works_upload_time,works_tag)
+        values
+        <foreach collection="list" item="item" separator="," index="index">
+            (#{item.worksId,jdbcType=INTEGER},#{item.worksName,jdbcType=VARCHAR},#{item.worksUploaderId,jdbcType=VARCHAR},
+            #{item.worksDescription,jdbcType=VARCHAR},#{item.schoolIpNum,jdbcType=VARCHAR},#{item.worksIcon,jdbcType=VARCHAR},
+            #{item.worksOwnerId,jdbcType=VARCHAR},#{item.permission,jdbcType=INTEGER},#{item.space,jdbcType=VARCHAR},
+            #{item.worksCreateTime,jdbcType=VARCHAR},#{item.worksUploadTime,jdbcType=VARCHAR},#{item.worksTag,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
+
+</mapper>
