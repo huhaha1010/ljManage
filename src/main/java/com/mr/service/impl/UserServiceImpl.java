@@ -6,6 +6,8 @@ import com.mr.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
@@ -60,5 +62,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public void updatePwdByEmail(String userPwd, String userEmail) {
         userMapper.updatePwdByEmail(userPwd, userEmail);
+    }
+
+    @Override
+    public List<User> selectUserList() {
+        return userMapper.selectUserList();
+    }
+
+    @Override
+    public User selectEditUser(Integer userId) {
+        User user = userMapper.selectEditUser(userId);
+        return user;
     }
 }

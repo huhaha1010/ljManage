@@ -3,6 +3,8 @@ package com.mr.mapper;
 import com.mr.pojo.User;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface UserMapper {
     User selectByUserName(String userName);
 
@@ -21,4 +23,8 @@ public interface UserMapper {
     User selectByIdEmailPwd(User user);
 
     void updatePwdByEmail(@Param("userPwd") String userPwd, @Param("userEmail") String userEmail);
+
+    List<User> selectUserList();
+
+    User selectEditUser(Integer userId);
 }

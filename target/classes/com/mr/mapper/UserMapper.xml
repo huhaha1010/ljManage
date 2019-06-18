@@ -92,4 +92,19 @@
         set user_pwd = #{userPwd,jdbcType=VARCHAR}
         where user_email = #{userEmail,jdbcType=VARCHAR}
     </update>
+
+<!--    列出所有用户-->
+    <select id="selectUserList" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+    </select>
+
+<!--    查询选择的用户-->
+    <select id="selectEditUser" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+        where user_id = #{userId,jdbcType=INTEGER}
+    </select>
 </mapper>

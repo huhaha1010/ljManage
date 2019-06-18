@@ -2,6 +2,8 @@ package com.mr.service;
 
 import com.mr.pojo.User;
 
+import java.util.List;
+
 public interface UserService {
     //判断用户昵称是否已经注册
     boolean isUserNameRegistered(String userName);
@@ -29,4 +31,10 @@ public interface UserService {
 
     //根据邮箱修改密码
     void updatePwdByEmail(String userPwd, String userEmail);
+
+    //得到所有用户
+    List<User> selectUserList();
+
+    //查询选中的用户
+    User selectEditUser(Integer userId);
 }

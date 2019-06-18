@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -372,6 +373,61 @@ public class UserController {
             log.info("用户" + userEmail + "修改密码失败");
             jsonObject.put("status", "0004");
             jsonObject.put("修改密码失败", "修改密码失败");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    /**
+     * 显示用户
+     */
+    @RequestMapping("/user/list")
+    public void list(HttpServletResponse response) {
+        log.info("开始查询用户");
+        JSONObject jsonObject = new JSONObject();
+        List<User> list = null;
+        try {
+            list = userService.selectUserList();
+            jsonObject.put("code", 0);
+            jsonObject.put("rows", list);
+            jsonObject.put("total", list.size());
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsonObject.put("status", "0001");
+            jsonObject.put("info", "查询失败");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    /**
+     * 根据用户id查询用户
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/user/selectEditUser")
+    public void selectEditUser(HttpServletRequest request, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject();
+        Integer userId = Integer.valueOf(request.getParameter("userId"));
+        User user = userService.selectEditUser(userId);
+        if(user != null) {
+            jsonObject.put("status", "0000");
+            jsonObject.put("user", user);
+        } else {
+            jsonObject.put("status", "0001");
+            jsonObject.put("info", "用户不存在");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    @RequestMapping("/user/checkEmailUnique")
+    public void checkEmailUnique(HttpServletRequest request, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject();
+        String userEmail = request.getParameter("userEmail");
+        log.info("修改的userEmail为：" + userEmail);
+        if (userService.isUserEmailRegistered(userEmail)) {
+            jsonObject.put("status", "1");
+            jsonObject.put("info", "邮箱已被注册");
+        } else {
+            jsonObject.put("status", "0");
         }
         ResponseUtil.setResponse(response, jsonObject);
     }
