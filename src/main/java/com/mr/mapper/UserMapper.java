@@ -24,7 +24,11 @@ public interface UserMapper {
 
     void updatePwdByEmail(@Param("userPwd") String userPwd, @Param("userEmail") String userEmail);
 
-    List<User> selectUserList();
+    List<User> selectUserList(User user);
 
     User selectEditUser(Integer userId);
+
+    void updateUserById(User user);
+
+    void deleteById(Integer userId);
 }

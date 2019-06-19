@@ -45,7 +45,7 @@ public class UserController {
         userPwd == null || userPwd.equals("") || userPhone == null || userPhone.equals("") ||
         userEmail == null || userEmail.equals("") || inputPhoneCode == null || inputPhoneCode.equals("")) {
             log.info("用户输入项为空");
-            jsonObject.put("status", "0002");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "输入项不能为空");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -54,7 +54,7 @@ public class UserController {
         //判断用户昵称是否已经注册
         if (userService.isUserNameRegistered(userName)) {
             log.info("用户昵称已被注册");
-            jsonObject.put("status", "0003");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "用户昵称已被注册");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -63,7 +63,7 @@ public class UserController {
         //判断手机验证码是否一致
         if (!phoneCode.equals(inputPhoneCode)) {
             log.info("手机验证码不一致");
-            jsonObject.put("status", "0004");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "手机验证码有误");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -72,7 +72,7 @@ public class UserController {
         //判断手机号是否已被注册
         if (userService.isUserPhoneRegistered(userPhone)) {
             log.info("用户手机号已被注册");
-            jsonObject.put("status", "0005");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "用户手机号已被注册");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -82,7 +82,7 @@ public class UserController {
         if (userService.isUserEmailRegistered(userEmail)) {
             log.info("用户邮箱已被注册");
             log.info("用户邮箱为：" + userEmail);
-            jsonObject.put("status", "0006");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "用户邮箱已被注册");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -101,7 +101,7 @@ public class UserController {
             jsonObject.put("info", "注册成功");
         } catch (Exception e) {
             log.info("用户注册失败");
-            jsonObject.put("status", "0007");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "注册失败");
             e.printStackTrace();
         }
@@ -122,7 +122,7 @@ public class UserController {
 
         if (attribute == null || attribute.equals("") || userPwd == null || userPwd.equals("")) {
             log.info("用户输入项为空");
-            jsonObject.put("status", "0002");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "用户输入项不能为空");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -169,7 +169,7 @@ public class UserController {
             SessionUtil.removeAttributeInSession(session, "phoneUpdatePwdCode");
         } else {
             log.info("手机验证码发送失败");
-            jsonObject.put("status", "0002");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "手机验证码发送失败");
         }
         ResponseUtil.setResponse(response, jsonObject);
@@ -201,7 +201,7 @@ public class UserController {
         newUserPwd == null || newUserPwd.equals("") ||
         inputPhoneCode == null || inputPhoneCode.equals("")) {
             log.info("用户输入信息为空");
-            jsonObject.put("status", "0002");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "输入信息不能为空");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -215,7 +215,7 @@ public class UserController {
         boolean isUserNow = userService.isUser(user);
         if (!isUserNow) {
             log.info("用户id、手机号、密码三者不一致");
-            jsonObject.put("status", "0003");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "用户输入信息有误");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -223,7 +223,7 @@ public class UserController {
 
         if (!verificationPhoneCode.equals(inputPhoneCode)) {
             log.info("手机验证码错误");
-            jsonObject.put("status", "0004");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "手机验证码错误");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -236,7 +236,7 @@ public class UserController {
             jsonObject.put("info", "修改密码成功");
         } catch (Exception e) {
             log.info("用户" + userPhone + "修改密码失败");
-            jsonObject.put("status", "0005");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "修改密码失败");
         }
         ResponseUtil.setResponse(response, jsonObject);
@@ -254,7 +254,7 @@ public class UserController {
 
         if (userPhone == null || userPhone.equals("")) {
             log.info("手机号为空");
-            jsonObject.put("status", "0002");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "手机号不能为空");
             ResponseUtil.setResponse(response, jsonObject);
             return;
@@ -268,7 +268,7 @@ public class UserController {
             SessionUtil.removeAttributeInSession(session, "phoneCode");
         } else {
             log.info("手机验证码发送失败");
-            jsonObject.put("status", "0007");
+            jsonObject.put("status", "0001");
             jsonObject.put("info", "手机验证码发送失败");
         }
         ResponseUtil.setResponse(response, jsonObject);
@@ -381,12 +381,20 @@ public class UserController {
      * 显示用户
      */
     @RequestMapping("/user/list")
-    public void list(HttpServletResponse response) {
+    public void list(HttpServletRequest request, HttpServletResponse response) {
         log.info("开始查询用户");
+        String userName = request.getParameter("searchUserName");
+        String userPhone = request.getParameter("searchUserPhone");
+        String userEmail = request.getParameter("searchUserEmail");
+        log.info("userName:" + userName);
+        User user = new User();
+        user.setUserName(userName);
+        user.setUserPhone(userPhone);
+        user.setUserEmail(userEmail);
         JSONObject jsonObject = new JSONObject();
         List<User> list = null;
         try {
-            list = userService.selectUserList();
+            list = userService.selectUserList(user);
             jsonObject.put("code", 0);
             jsonObject.put("rows", list);
             jsonObject.put("total", list.size());
@@ -422,12 +430,173 @@ public class UserController {
     public void checkEmailUnique(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
         String userEmail = request.getParameter("userEmail");
+        Integer userId = Integer.valueOf(request.getParameter("userId"));
         log.info("修改的userEmail为：" + userEmail);
+        User user = userService.selectEditUser(userId);
+        if (user.getUserEmail().equals(userEmail)) {
+            jsonObject.put("status", "0");
+            log.info("输入的邮箱不变");
+            ResponseUtil.setResponse(response, jsonObject);
+            return;
+        }
         if (userService.isUserEmailRegistered(userEmail)) {
             jsonObject.put("status", "1");
-            jsonObject.put("info", "邮箱已被注册");
+            log.info(userEmail + "已被注册");
         } else {
             jsonObject.put("status", "0");
+            log.info("邮箱可以注册");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    @RequestMapping("/user/checkPhoneUnique")
+    public void checkPhoneUnique(HttpServletRequest request, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject();
+        String userPhone = request.getParameter("userPhone");
+        Integer userId = Integer.valueOf(request.getParameter("userId"));
+        log.info("修改的userPhone为：" + userPhone);
+        User user = userService.selectEditUser(userId);
+        if (user.getUserPhone().equals(userPhone)) {
+            jsonObject.put("status", "0");
+            log.info("输入的手机号不变");
+            ResponseUtil.setResponse(response, jsonObject);
+            return;
+        }
+        if (userService.isUserPhoneRegistered(userPhone)) {
+            jsonObject.put("status", "1");
+            log.info(userPhone + "已被注册");
+        } else {
+            jsonObject.put("status", "0");
+            log.info("手机号可以注册");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    /**
+     * 修改用户信息
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/user/edit")
+    public void edit(HttpServletRequest request, HttpServletResponse response) {
+        log.info("开始更新");
+        JSONObject jsonObject = new JSONObject();
+        Integer userId = Integer.valueOf(request.getParameter("userId"));
+        String userName = request.getParameter("userName");
+        log.info(userName);
+        String userEmail = request.getParameter("userEmail");
+        String userPhone = request.getParameter("userPhone");
+        log.info(userPhone);
+        User user = new User();
+        user.setUserId(userId);
+        user.setUserEmail(userEmail);
+        user.setUserPhone(userPhone);
+        user.setUserName(userName);
+        try {
+            userService.updateUserById(user);
+            jsonObject.put("code", "0");
+            jsonObject.put("msg", "操作成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsonObject.put("code", "500");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    /**
+     * 删除用户
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/user/remove")
+    public void remove(HttpServletRequest request, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject();
+        Integer userId = Integer.valueOf(request.getParameter("ids"));
+        log.info(userId);
+        try {
+            userService.deleteById(userId);
+            jsonObject.put("code", "0");
+            jsonObject.put("msg", "操作成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsonObject.put("code", "500");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    /**
+     * 判断用户名称是否唯一
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/user/checkAddUserNameUnique")
+    public void checkUserNameUnique(HttpServletRequest request, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject();
+        String userName = request.getParameter("userName");
+        if (userService.isUserNameRegistered(userName)) {
+            jsonObject.put("code", "1");
+            jsonObject.put("msg", "名称已被注册");
+        } else {
+            jsonObject.put("code", "0");
+            jsonObject.put("msg", "可以注册");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    /**
+     * 检查邮箱是否唯一
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/user/checkAddUserEmailUnique")
+    public void checkUserEmailUnique(HttpServletRequest request, HttpServletResponse response) {
+        log.info("检查用户邮箱是否唯一");
+        JSONObject jsonObject = new JSONObject();
+        String userEmail = request.getParameter("userEmail");
+        log.info("邮箱为：" + userEmail);
+        if (userService.isUserEmailRegistered(userEmail)) {
+            jsonObject.put("code", "1");
+        } else {
+            jsonObject.put("code", "0");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    @RequestMapping("/user/checkAddUserPhoneUnique")
+    public void checkAddUserPhoneUnique(HttpServletRequest request, HttpServletResponse response) {
+        log.info("检查用户手机号是否唯一");
+        JSONObject jsonObject = new JSONObject();
+        String userPhone = request.getParameter("userPhone");
+        log.info("修改的手机号为：" + userPhone);
+        if (userService.isUserPhoneRegistered(userPhone)) {
+            jsonObject.put("code", "1");
+        } else {
+            jsonObject.put("code", "0");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    @RequestMapping("/user/adminAdd")
+    public void adminAdd(HttpServletRequest request, HttpServletResponse response) {
+        log.info("管理员增加用户");
+        JSONObject jsonObject = new JSONObject();
+        String userName = request.getParameter("userName");
+        String userPhone = request.getParameter("userPhone");
+        String userEmail = request.getParameter("userEmail");
+        String userPwd = request.getParameter("userPwd");
+        User user = new User();
+        user.setUserName(userName);
+        user.setUserPhone(userPhone);
+        user.setUserEmail(userEmail);
+        user.setUserPwd(userPwd);
+        try {
+            userService.insertSelective(user);
+            jsonObject.put("code", "0");
+            jsonObject.put("msg", "操作成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsonObject.put("code", "500");
+            jsonObject.put("msg", "操作失败");
         }
         ResponseUtil.setResponse(response, jsonObject);
     }

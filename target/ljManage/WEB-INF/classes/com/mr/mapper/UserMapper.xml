@@ -94,10 +94,20 @@
     </update>
 
 <!--    列出所有用户-->
-    <select id="selectUserList" resultMap="BaseResultMap">
+    <select id="selectUserList" parameterType="com.mr.pojo.User" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from user
+        where 1 = 1
+        <if test="userName != null">
+           and user_name like concat('%', #{userName,jdbcType=VARCHAR}, '%') and
+        </if>
+        <if test="userPhone != null">
+            user_phone like concat('%', #{userPhone,jdbcType=VARCHAR}, '%') and
+        </if>
+        <if test="userEmail != null">
+            user_email like concat('%', #{userEmail,jdbcType=VARCHAR}, '%')
+        </if>
     </select>
 
 <!--    查询选择的用户-->
@@ -107,4 +117,17 @@
         from user
         where user_id = #{userId,jdbcType=INTEGER}
     </select>
+
+    <update id="updateUserById" parameterType="com.mr.pojo.User">
+        update user
+        set user_name = #{userName,jdbcType=VARCHAR},
+        user_phone = #{userPhone,jdbcType=VARCHAR},
+        user_email = #{userEmail,jdbcType=VARCHAR}
+        where user_id = #{userId,jdbcType=INTEGER}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from user
+        where user_id = #{userId,jdbcType=INTEGER}
+    </delete>
 </mapper>

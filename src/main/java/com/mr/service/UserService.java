@@ -33,8 +33,14 @@ public interface UserService {
     void updatePwdByEmail(String userPwd, String userEmail);
 
     //得到所有用户
-    List<User> selectUserList();
+    List<User> selectUserList(User user);
 
     //查询选中的用户
     User selectEditUser(Integer userId);
+
+    //根据用户id更新user
+    void updateUserById(User user);
+
+    //根据用户id删除用户
+    void deleteById(Integer userId);
 }

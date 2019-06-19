@@ -65,13 +65,23 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> selectUserList() {
-        return userMapper.selectUserList();
+    public List<User> selectUserList(User user) {
+        return userMapper.selectUserList(user);
     }
 
     @Override
     public User selectEditUser(Integer userId) {
         User user = userMapper.selectEditUser(userId);
         return user;
+    }
+
+    @Override
+    public void updateUserById(User user) {
+        userMapper.updateUserById(user);
+    }
+
+    @Override
+    public void deleteById(Integer userId) {
+        userMapper.deleteById(userId);
     }
 }
