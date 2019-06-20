@@ -31,4 +31,6 @@ public interface UserMapper {
     void updateUserById(User user);
 
     void deleteById(Integer userId);
+
+    void deleteListById(List<Integer> list);
 }

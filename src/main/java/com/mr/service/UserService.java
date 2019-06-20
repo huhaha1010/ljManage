@@ -43,4 +43,7 @@ public interface UserService {
 
     //根据用户id删除用户
     void deleteById(Integer userId);
+
+    //根据用户id批量删除
+    void deleteListById(List<Integer> list);
 }

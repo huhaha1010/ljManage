@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mr.config.Config;
+import com.mr.pojo.Server;
 import com.mr.pojo.Works;
 import com.mr.service.WorksService;
 import com.mr.util.JsonUtils;
@@ -123,6 +124,40 @@ public class WorksController {
 			}
 		}
 		log.info("读取json文件完毕");
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	@RequestMapping("/works/list")
+	public void list(HttpServletRequest request, HttpServletResponse response) {
+		log.info("开始查询作品");
+		String worksOwnerIdStr = request.getParameter("searchWorksOwnerId");
+		Integer worksOwnerId = null;
+		if (worksOwnerIdStr != null && worksOwnerIdStr != "") {
+			worksOwnerId = Integer.valueOf(worksOwnerIdStr);
+		}
+		String worksId = request.getParameter("searchWorksId");
+		String worksUploaderId = request.getParameter("searchWorksUploaderId");
+		String worksName = request.getParameter("searchWorksName");
+		String space = request.getParameter("searchSpace");
+		String startTime = request.getParameter("startTime");
+		String endTime = request.getParameter("endTime");
+		Works works = new Works();
+		works.setWorksId(worksId);
+		works.setWorksUploaderId(worksUploaderId);
+		works.setWorksName(worksName);
+		works.setSpace(space);
+		JSONObject jsonObject = new JSONObject();
+		List<Works> list = null;
+		try {
+			list = worksService.selectWorksList(works, startTime, endTime);
+			jsonObject.put("code", 0);
+			jsonObject.put("rows", list);
+			jsonObject.put("total", list.size());
+		} catch (Exception e) {
+			e.printStackTrace();
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "查询失败");
+		}
 		ResponseUtil.setResponse(response, jsonObject);
 	}
 }

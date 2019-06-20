@@ -18,4 +18,63 @@
     from server
     where server_id = #{serverId,jdbcType=INTEGER}
   </select>
+
+  <select id="selectServerList" parameterType="com.mr.pojo.Server" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from server
+    where 1 = 1
+    <if test="serverId != null">
+      and server_id like concat('%', #{serverId,jdbcType=INTEGER}, '%')
+    </if>
+    <if test="serverIp != null">
+      and server_ip like concat('%', #{serverIp,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="serverName != null">
+      and server_name like concat('%', #{serverName,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="serverCompanyId != null">
+      and server_company_id like concat('%', #{serverCompanyId,jdbcType=INTEGER},'%')
+    </if>
+  </select>
+
+  <select id="selectByIp" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from server
+    where server_ip = #{serverIp,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from server
+    where server_name = #{serverName,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteById" parameterType="java.lang.Integer">
+    delete from server
+    where server_id = #{serverId,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insertSelective" parameterType="com.mr.pojo.Server">
+    insert into server(server_name,server_ip,server_company_id)
+    values (#{serverName,jdbcType=VARCHAR},#{serverIp,jdbcType=VARCHAR},#{serverCompanyId,jdbcType=INTEGER})
+  </insert>
+
+  <delete id="deleteListById" parameterType="java.util.List">
+    delete from server
+    where server_id in
+    <foreach collection="list" index="index" item="item" open="(" close=")" separator=",">
+      #{item}
+    </foreach>
+  </delete>
+
+  <update id="updateById" parameterType="com.mr.pojo.Server">
+    update server
+    set server_name = #{serverName,jdbcType=VARCHAR},
+    server_ip = #{serverIp,jdbcType=VARCHAR},
+    server_company_id = #{serverCompanyId,jdbcType=INTEGER}
+    where  server_id = #{serverId,jdbcType=INTEGER}
+  </update>
 </mapper>

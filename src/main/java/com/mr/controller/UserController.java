@@ -2,6 +2,7 @@ package com.mr.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mr.config.Config;
+import com.mr.pojo.Server;
 import com.mr.pojo.User;
 import com.mr.service.UserService;
 import com.mr.util.*;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -511,10 +513,14 @@ public class UserController {
     @RequestMapping("/user/remove")
     public void remove(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
-        Integer userId = Integer.valueOf(request.getParameter("ids"));
-        log.info(userId);
+        String[] ids = request.getParameter("ids").split(",");
+        List<Integer> list = new ArrayList<>();
+        for (String id : ids) {
+            log.info("id:" + id);
+            list.add(Integer.valueOf(id));
+        }
         try {
-            userService.deleteById(userId);
+            userService.deleteListById(list);
             jsonObject.put("code", "0");
             jsonObject.put("msg", "操作成功");
         } catch (Exception e) {
@@ -525,12 +531,12 @@ public class UserController {
     }
 
     /**
-     * 判断用户名称是否唯一
+     * 判断添加用户名称是否唯一
      * @param request
      * @param response
      */
     @RequestMapping("/user/checkAddUserNameUnique")
-    public void checkUserNameUnique(HttpServletRequest request, HttpServletResponse response) {
+    public void checkAddUserNameUnique(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
         String userName = request.getParameter("userName");
         if (userService.isUserNameRegistered(userName)) {
@@ -576,6 +582,11 @@ public class UserController {
         ResponseUtil.setResponse(response, jsonObject);
     }
 
+    /**
+     * 管理员增加用户
+     * @param request
+     * @param response
+     */
     @RequestMapping("/user/adminAdd")
     public void adminAdd(HttpServletRequest request, HttpServletResponse response) {
         log.info("管理员增加用户");
@@ -597,6 +608,29 @@ public class UserController {
             e.printStackTrace();
             jsonObject.put("code", "500");
             jsonObject.put("msg", "操作失败");
+        }
+        ResponseUtil.setResponse(response, jsonObject);
+    }
+
+    @RequestMapping("/user/checkUserNameUnique")
+    public void checkUserNameUnique(HttpServletRequest request, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject();
+        String userName = request.getParameter("userName");
+        Integer userId = Integer.valueOf(request.getParameter("userId"));
+        log.info("修改的userName为：" + userName);
+        User user = userService.selectEditUser(userId);
+        if (user.getUserName().equals(userName)) {
+            jsonObject.put("status", "0");
+            log.info("输入的用户名不变");
+            ResponseUtil.setResponse(response, jsonObject);
+            return;
+        }
+        if (userService.isUserNameRegistered(userName)) {
+            jsonObject.put("status", "1");
+            log.info(userName + "已被使用");
+        } else {
+            jsonObject.put("status", "0");
+            log.info("名称可以登记");
         }
         ResponseUtil.setResponse(response, jsonObject);
     }

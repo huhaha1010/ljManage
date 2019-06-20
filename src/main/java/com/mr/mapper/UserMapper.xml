@@ -130,4 +130,12 @@
         delete from user
         where user_id = #{userId,jdbcType=INTEGER}
     </delete>
+    
+    <delete id="deleteListById" parameterType="java.util.List">
+        delete from user
+        where user_id in
+        <foreach collection="list" index="index" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </delete>
 </mapper>

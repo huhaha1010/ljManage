@@ -39,4 +39,14 @@
         </foreach>
     </insert>
 
+    <select id="selectWorksList" parameterType="java.lang.Object" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from works
+        where 1 = 1
+        <if test="worksId != null">
+            and woks_id like concat('%', #{worksId,jdbcType=VARCHAR}, '%')
+        </if>
+    </select>
+
 </mapper>

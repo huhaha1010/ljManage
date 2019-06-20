@@ -18,4 +18,10 @@ public class WorksServiceImpl implements WorksService {
 		worksMapper.insertList(list);
 	}
 
+	@Override
+	public List<Works> selectWorksList(Works works, String startTime, String endTime) {
+		List<Works> list = worksMapper.selectWorksList(works, startTime, endTime);
+		return list;
+	}
+
 }

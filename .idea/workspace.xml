@@ -8,13 +8,47 @@
   <component name="ChangeListManager">
     <list default="true" id="c4177a90-454c-4981-9f7b-09572a496e99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/ServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/ServerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/ServerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/ServerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/WorksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/ServerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/ServerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/ServerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/ServerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/ServerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/impl/ServerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/impl/ServerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/util/ResponseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/util/ResponseUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/ServerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/ServerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/ServerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/ServerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/ResponseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/ResponseUtil.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,13 +77,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="601" selection-start-line="601" selection-end-line="601" />
+            <state relative-caret-position="399">
+              <caret line="625" column="19" lean-forward="true" selection-start-line="625" selection-start-column="19" selection-end-line="625" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="149" column="18" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="17" column="112" selection-start-line="17" selection-start-column="112" selection-end-line="17" selection-end-column="112" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Works.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+              <folding>
+                <element signature="e#632#633#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,41 +168,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="29" column="69" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="69" />
+            <state relative-caret-position="289">
+              <caret line="92" column="55" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="92" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../Maven/repository/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="399" selection-start-line="399" selection-end-line="399" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" selection-start-line="8" selection-start-column="1" selection-end-line="12" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -100,20 +180,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="167">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -121,40 +192,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="167">
+              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#941#942#0" expanded="true" />
                 <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1852#1853#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
-                <element signature="e#2107#2108#0" expanded="true" />
-                <element signature="e#2132#2133#0" expanded="true" />
-                <element signature="e#2214#2215#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
+                <element signature="e#2365#2366#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -182,10 +230,15 @@
       <find>setMaterialUploadTime</find>
       <find>updateUserById</find>
       <find>system/</find>
-      <find>edit</find>
-      <find>list</find>
       <find>selectUserList</find>
+      <find>dele</find>
       <find>insert</find>
+      <find>add</find>
+      <find>remove</find>
+      <find>update</find>
+      <find>edit</find>
+      <find>checkUserNameUnique</find>
+      <find>list</find>
     </findStrings>
     <dirStrings>
       <dir>C:\LJSJ\hhl\ideaWorkspace\ljManage</dir>
@@ -205,12 +258,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/util/EmailUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/ServerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/ServerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/LjMaterial.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/LjMaterialMapper.java" />
@@ -224,12 +271,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/util/BatchUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/util/GetClientUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Works.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Material.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java" />
@@ -242,13 +285,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/PageDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/ServerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/ServerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" />
       </list>
     </option>
   </component>
@@ -288,102 +341,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -641,7 +601,8 @@
       <workItem from="1560484348966" duration="7337000" />
       <workItem from="1560735338119" duration="17088000" />
       <workItem from="1560820086131" duration="11082000" />
-      <workItem from="1560909101353" duration="21232000" />
+      <workItem from="1560909101353" duration="21514000" />
+      <workItem from="1560995386198" duration="20358000" />
     </task>
     <task id="LOCAL-00001" summary="1906121748第1次提交">
       <created>1560332932231</created>
@@ -664,11 +625,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560851823503</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="接着增加了用户管理功能">
+      <created>1560938269808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560938269808</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144890000" />
+    <option name="totallyTimeSpent" value="165530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -681,9 +649,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -694,7 +661,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" visible="true" weight="0.4002169" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" visible="true" weight="0.4002169" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -725,7 +692,8 @@
     <MESSAGE value="1906121748第1次提交" />
     <MESSAGE value="测试一下" />
     <MESSAGE value="增添了用户管理部分功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增添了用户管理部分功能" />
+    <MESSAGE value="接着增加了用户管理功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="接着增加了用户管理功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
@@ -748,13 +716,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Server.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/ServerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/BatchUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java">
@@ -764,41 +725,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/ServerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -836,42 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Works.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -906,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -920,16 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,23 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Maven/repository/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1040,9 +896,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Maven/repository/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="7700">
           <caret line="399" selection-start-line="399" selection-end-line="399" />
         </state>
       </provider>
@@ -1054,58 +920,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="616">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="29" column="69" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="69" />
+        <state relative-caret-position="219">
+          <caret line="10" column="81" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
-            <element signature="e#2132#2133#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="484">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/ServerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1114,18 +969,145 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="494">
+          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/ServerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
+        <state relative-caret-position="399">
+          <caret line="625" column="19" lean-forward="true" selection-start-line="625" selection-start-column="19" selection-end-line="625" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="92" column="55" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="92" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Works.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding>
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="112" selection-start-line="17" selection-start-column="112" selection-end-line="17" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="149" column="18" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
         </state>
       </provider>
     </entry>
