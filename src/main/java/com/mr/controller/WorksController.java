@@ -2,6 +2,7 @@ package com.mr.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mr.config.Config;
-import com.mr.pojo.Server;
 import com.mr.pojo.Works;
 import com.mr.service.WorksService;
 import com.mr.util.JsonUtils;
@@ -42,9 +42,9 @@ public class WorksController {
 	public void insertList(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "jsonWorksFile") MultipartFile file) {
 		JSONObject jsonObject = new JSONObject();
 		log.info("开始读取json文件");
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
-		String date = simpleDateFormat.format(new Date());
-		String schoolIpNum = request.getParameter("schoolIpNum").toString();
+		DateFormat fileDateFormate = new SimpleDateFormat("yyyyMMddHHmmss");
+		String date = fileDateFormate.format(new Date());
+		String schoolIpNum = request.getParameter("schoolIpNum");
 		String fileOriName = file.getOriginalFilename();
 		String fileName = fileOriName.substring(0, fileOriName.lastIndexOf(".")) + date + ".json";
 		String jsonFilePath = Config.JSONFILE_PATH + fileName;
@@ -72,7 +72,7 @@ public class WorksController {
 			return;
 		}
 		JSONArray jsonArray = JSONArray.parseArray(jsonString);
-		
+		log.info("works中的jsonArray.size()=" + jsonArray.size());
 		//使用集合实现批量插入
 		List<Works> list = new ArrayList<>();
 		for (Object o : jsonArray) {
@@ -91,8 +91,16 @@ public class WorksController {
 				works.setPermission(0);//选择不公开
 			}
 			works.setSpace(item.getString("space"));
-			works.setWorksCreateTime(item.getString("uploadTime"));
-			works.setWorksUploadTime(date);
+			try {
+				works.setWorksCreateTime(fileDateFormate.parse(item.getString("uploadTime")));
+				works.setWorksUploadTime(fileDateFormate.parse(date));
+			} catch (Exception e) {
+				e.printStackTrace();
+				jsonObject.put("status", "0001");
+				jsonObject.put("info", "转换时间格式失败");
+				ResponseUtil.setResponse(response, jsonObject);
+				return;
+			}
 			works.setWorksTag(item.getJSONArray("tags").toJSONString());
 			list.add(works);
 			if (list.size() >= 20) {
@@ -127,29 +135,43 @@ public class WorksController {
 		ResponseUtil.setResponse(response, jsonObject);
 	}
 
+	/**
+	 * 查询作品
+	 * @param request
+	 * @param response
+	 */
 	@RequestMapping("/works/list")
 	public void list(HttpServletRequest request, HttpServletResponse response) {
 		log.info("开始查询作品");
-		String worksOwnerIdStr = request.getParameter("searchWorksOwnerId");
-		Integer worksOwnerId = null;
-		if (worksOwnerIdStr != null && worksOwnerIdStr != "") {
-			worksOwnerId = Integer.valueOf(worksOwnerIdStr);
-		}
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		String worksId = request.getParameter("searchWorksId");
+		String worksOwnerId = request.getParameter("searchWorksOwnerId");
 		String worksUploaderId = request.getParameter("searchWorksUploaderId");
 		String worksName = request.getParameter("searchWorksName");
 		String space = request.getParameter("searchSpace");
 		String startTime = request.getParameter("startTime");
 		String endTime = request.getParameter("endTime");
+		log.info("worksId=" + worksId);
+		log.info("startTime=" + startTime);
+		log.info("endTime=" + endTime);
 		Works works = new Works();
 		works.setWorksId(worksId);
 		works.setWorksUploaderId(worksUploaderId);
 		works.setWorksName(worksName);
 		works.setSpace(space);
+		works.setWorksOwnerId(worksOwnerId);
 		JSONObject jsonObject = new JSONObject();
 		List<Works> list = null;
+		Date dateStart = null;
+		Date dateEnd = null;
 		try {
-			list = worksService.selectWorksList(works, startTime, endTime);
+			dateStart = (startTime == null || startTime.equals("")) ? null : dateFormat.parse(startTime);
+			dateEnd = (endTime == null || endTime.equals("")) ? null : dateFormat.parse(endTime);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			list = worksService.selectWorksList(works, dateStart, dateEnd);
 			jsonObject.put("code", 0);
 			jsonObject.put("rows", list);
 			jsonObject.put("total", list.size());
@@ -157,6 +179,87 @@ public class WorksController {
 			e.printStackTrace();
 			jsonObject.put("status", "0001");
 			jsonObject.put("info", "查询失败");
+		}
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	/**
+	 * 根据id查询作品信息
+	 * @param request
+	 * @param response
+	 */
+	@RequestMapping("/works/selectById")
+	public void selectById(HttpServletRequest request, HttpServletResponse response) {
+		JSONObject jsonObject = new JSONObject();
+		Integer id = Integer.valueOf(request.getParameter("id"));
+		Works works = null;
+		try {
+			works = worksService.selectById(id);
+			jsonObject.put("status", "0000");
+			jsonObject.put("msg", "操作成功");
+			jsonObject.put("works", works);
+		} catch (Exception e) {
+			jsonObject.put("status", "500");
+		}
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	/**
+	 * 更改作品信息
+	 * @param request
+	 * @param response
+	 */
+	@RequestMapping("/works/edit")
+	public void updateById(HttpServletRequest request, HttpServletResponse response) {
+		JSONObject jsonObject = new JSONObject();
+		Integer id = Integer.valueOf(request.getParameter("id"));
+		String worksName = request.getParameter("worksName");
+		String worksUploaderId = request.getParameter("worksUploaderId");
+		String worksOwnerId = request.getParameter("worksOwnerId");
+		Double worksPrice = Double.valueOf(request.getParameter("worksPrice"));
+		String worksDescription = request.getParameter("worksDescription");
+		String worksIcon = request.getParameter("worksIcon");
+		Integer permission = Integer.valueOf(request.getParameter("permission"));
+		String space = request.getParameter("space");
+		String worksTag = request.getParameter("worksTag");
+		Works works = new Works();
+		works.setId(id);
+		works.setWorksName(worksName);
+		works.setWorksUploaderId(worksUploaderId);
+		works.setWorksOwnerId(worksOwnerId);
+		works.setWorksPrice(worksPrice);
+		works.setWorksDescription(worksDescription);
+		works.setWorksIcon(worksIcon);
+		works.setPermission(permission);
+		works.setSpace(space);
+		works.setWorksTag(worksTag);
+		try {
+			worksService.updateById(works);
+			jsonObject.put("code", "0");
+			jsonObject.put("msg", "操作成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			jsonObject.put("code", "500");
+		}
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	@RequestMapping("/works/remove")
+	public void remove(HttpServletRequest request, HttpServletResponse response) {
+		JSONObject jsonObject = new JSONObject();
+		String[] ids = request.getParameter("ids").split(",");
+		List<Integer> list = new ArrayList<>();
+		for (String id : ids) {
+			log.info("id=" + id);
+			list.add(Integer.valueOf(id));
+		}
+		try {
+			worksService.deleteListById(list);
+			jsonObject.put("code", "0");
+			jsonObject.put("msg", "操作成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			jsonObject.put("code", "500");
 		}
 		ResponseUtil.setResponse(response, jsonObject);
 	}

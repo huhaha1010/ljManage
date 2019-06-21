@@ -1,5 +1,9 @@
 package com.mr.pojo;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
+import java.util.Date;
+
 public class Material {
     private Integer id;
 
@@ -29,9 +33,11 @@ public class Material {
 
     private String materialTag;
 
-    private String materialCreateTime;
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
+    private Date materialCreateTime;
 
-    private String materialUploadTime;
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
+    private Date materialUploadTime;
 
     private String catalog;
 
@@ -149,20 +155,20 @@ public class Material {
         this.materialTag = materialTag == null ? null : materialTag.trim();
     }
 
-    public String getMaterialCreateTime() {
+    public Date getMaterialCreateTime() {
         return materialCreateTime;
     }
 
-    public void setMaterialCreateTime(String materialCreateTime) {
-        this.materialCreateTime = materialCreateTime == null ? null : materialCreateTime.trim();
+    public void setMaterialCreateTime(Date materialCreateTime) {
+        this.materialCreateTime = materialCreateTime == null ? null : materialCreateTime;
     }
 
-    public String getMaterialUploadTime() {
+    public Date getMaterialUploadTime() {
         return materialUploadTime;
     }
 
-    public void setMaterialUploadTime(String materialUploadTime) {
-        this.materialUploadTime = materialUploadTime == null ? null : materialUploadTime.trim();
+    public void setMaterialUploadTime(Date materialUploadTime) {
+        this.materialUploadTime = materialUploadTime == null ? null : materialUploadTime;
     }
 
     public String getCatalog() {

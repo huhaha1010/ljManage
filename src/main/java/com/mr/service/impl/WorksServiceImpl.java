@@ -1,5 +1,6 @@
 package com.mr.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import com.mr.mapper.WorksMapper;
@@ -19,9 +20,25 @@ public class WorksServiceImpl implements WorksService {
 	}
 
 	@Override
-	public List<Works> selectWorksList(Works works, String startTime, String endTime) {
+	public List<Works> selectWorksList(Works works, Date startTime, Date endTime) {
 		List<Works> list = worksMapper.selectWorksList(works, startTime, endTime);
 		return list;
+	}
+
+	@Override
+	public Works selectById(Integer id) {
+		Works works = worksMapper.selectById(id);
+		return works;
+	}
+
+	@Override
+	public void updateById(Works works) {
+		worksMapper.updateById(works);
+	}
+
+	@Override
+	public void deleteListById(List<Integer> list) {
+		worksMapper.deleteListById(list);
 	}
 
 }

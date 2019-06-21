@@ -1,5 +1,6 @@
 package com.mr.mapper;
 
+import java.util.Date;
 import java.util.List;
 
 import com.mr.pojo.Works;
@@ -15,5 +16,14 @@ public interface WorksMapper {
     void insertList(List<Works> list);
 
     //查询作品集合
-    List<Works> selectWorksList(Works works, @PathVariable("startTime") String startTime, @PathVariable("endTime") String endTime);
+    List<Works> selectWorksList(@PathVariable("works") Works works, @PathVariable("startTime") Date startTime, @PathVariable("endTime") Date endTime);
+
+    //根据id查作品
+    Works selectById(Integer id);
+
+    //根据id更改作品
+    void updateById(Works works);
+
+    //批量删除作品
+    void deleteListById(List<Integer> list);
 }
