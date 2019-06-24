@@ -49,15 +49,18 @@ public class AdminController {
         log.info("开始获取用户");
         JSONObject jsonObject = new JSONObject();
         HttpSession session = request.getSession();
-        log.info("sessionId为：" + session.getId());
-        log.info(session.toString());
         String adminName = null;
         try {
             adminName = session.getAttribute("adminName").toString();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.info("session失效");
+            jsonObject.put("status", "0001");
+            jsonObject.put("info", "session失效");
+            ResponseUtil.setResponse(response, jsonObject);
+            return;
         }
         log.info(adminName);
+        jsonObject.put("status", "0000");
         jsonObject.put("adminName", adminName);
         ResponseUtil.setResponse(response, jsonObject);
     }

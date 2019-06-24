@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mr.mapper.WorksLogMapper" >
+  <resultMap id="BaseResultMap" type="com.mr.pojo.WorksLog" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="works_id" property="worksId" jdbcType="INTEGER" />
+    <result column="behaviour_type" property="behaviourType" jdbcType="VARCHAR" />
+    <result column="nums" property="nums" jdbcType="INTEGER" />
+    <result column="operating_time" property="operatingTime" jdbcType="TIMESTAMP" />
+    <result column="insert_time" property="insertTime" jdbcType="TIMESTAMP" />
+    <result column="school_ip_num" property="schoolIpNum" jdbcType="INTEGER" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id, user_id, works_id, behaviour_type, nums, operating_time, insert_time, school_ip_num
+  </sql>
+
+  <insert id="insertSelective" parameterType="com.mr.pojo.WorksLog" >
+    insert into works_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="worksId != null" >
+        works_id,
+      </if>
+      <if test="behaviourType != null" >
+        behaviour_type,
+      </if>
+      <if test="nums != null" >
+        nums,
+      </if>
+      <if test="operatingTime != null" >
+        operating_time,
+      </if>
+      <if test="insertTime != null" >
+        insert_time,
+      </if>
+      <if test="schoolIpNum != null">
+        school_ip_num,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="worksId != null" >
+        #{worksId,jdbcType=INTEGER},
+      </if>
+      <if test="behaviourType != null" >
+        #{behaviourType,jdbcType=VARCHAR},
+      </if>
+      <if test="nums != null" >
+        #{nums,jdbcType=INTEGER},
+      </if>
+      <if test="operatingTime != null" >
+        #{operatingTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="insertTime != null" >
+        #{insertTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="schoolIpNum != null">
+        #{schoolIpNum,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+</mapper>

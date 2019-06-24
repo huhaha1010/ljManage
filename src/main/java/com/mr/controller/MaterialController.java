@@ -1,8 +1,8 @@
 package com.mr.controller;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.mr.config.Config;
 import com.mr.pojo.Material;
+import com.mr.pojo.MaterialLog;
+import com.mr.service.MaterialLogService;
 import com.mr.service.MaterialService;
 import com.mr.util.JsonUtils;
 import com.mr.util.ResponseUtil;
@@ -37,6 +39,9 @@ public class MaterialController {
 	
 	@Autowired
 	private MaterialService materialService;
+
+	@Autowired
+	private MaterialLogService materialLogService;
 	
 	@RequestMapping("/material/insertList")
 	public void insertList(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "jsonMaterialFile") MultipartFile file) {
@@ -246,6 +251,79 @@ public class MaterialController {
 			e.printStackTrace();
 			jsonObject.put("code", "500");
 		}
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	/**
+	 * 读取素材日志
+	 * @param request
+	 * @param response
+	 * @param file
+	 */
+	@RequestMapping("/material/insertMaterialLog")
+	public void insertMaterialLog(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "materialLog") MultipartFile file) {
+		JSONObject jsonObject = new JSONObject();
+		String schoolIpNum = request.getParameter("schoolIpNum");
+		if (schoolIpNum == null || schoolIpNum.equals("")) {
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "服务器编号为空");
+			ResponseUtil.setResponse(response, jsonObject);
+			return;
+		}
+		SimpleDateFormat dateFormatFile = new SimpleDateFormat("yyyyMMddHHmmss");
+		SimpleDateFormat dateFormatDatabase = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		String date = dateFormatFile.format(new Date());
+		String fileOriName = file.getOriginalFilename();
+		String fileName = fileOriName.substring(0, fileOriName.lastIndexOf(".")) + date + ".log";
+		String filePath = Config.MATERIAL_LOG_PATH + fileName;
+		File logFile = new File(Config.MATERIAL_LOG_PATH, fileName);
+		if (!logFile.exists()) {
+			logFile.mkdirs();
+		}
+		try {
+			file.transferTo(logFile);
+			log.info("云服务器接收素材日志成功");
+		} catch (IllegalStateException | IOException e) {
+			log.info("云服务器接收素材日志失败");
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "云服务器接收素材日志失败");
+			e.printStackTrace();
+			ResponseUtil.setResponse(response, jsonObject);
+			return;
+		}
+		try {
+			FileReader fr = new FileReader(filePath);
+			BufferedReader br = new BufferedReader(fr);
+			String line = "";
+			String[] arrs = null;
+			br.readLine();
+			while ((line = br.readLine()) != null) {
+				arrs = line.split("\\s+");
+				MaterialLog materialLog = new MaterialLog();
+				materialLog.setLjUserId(Integer.valueOf(arrs[0]));
+				materialLog.setMaterialId(Integer.valueOf(arrs[1]));
+				materialLog.setBehaviorTypes(arrs[2]);
+				materialLog.setDownloadNum(Integer.valueOf(arrs[3]));
+				try {
+					materialLog.setOperatingTime(dateFormatDatabase.parse(arrs[4]));
+					materialLog.setInsertTime(dateFormatFile.parse(date));
+				} catch (ParseException e) {
+					e.printStackTrace();
+				}
+				materialLog.setSchoolIpNum(Integer.valueOf(schoolIpNum));
+				materialLogService.insert(materialLog);
+			}
+			br.close();
+			fr.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "插入数据失败");
+		}
+
+		jsonObject.put("status", "0000");
+		jsonObject.put("info", "读取日志成功");
+		log.info("读取素材日志完毕");
 		ResponseUtil.setResponse(response, jsonObject);
 	}
 }

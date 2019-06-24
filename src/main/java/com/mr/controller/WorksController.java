@@ -1,8 +1,11 @@
 package com.mr.controller;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,6 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.mr.config.Config;
 import com.mr.pojo.Works;
+import com.mr.pojo.WorksLog;
+import com.mr.service.WorksLogService;
 import com.mr.service.WorksService;
 import com.mr.util.JsonUtils;
 import com.mr.util.ResponseUtil;
@@ -37,6 +42,9 @@ public class WorksController {
 	
 	@Autowired
 	private WorksService worksService;
+
+	@Autowired
+	private WorksLogService worksLogService;
 	
 	@RequestMapping("/works/insertList")
 	public void insertList(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "jsonWorksFile") MultipartFile file) {
@@ -261,6 +269,76 @@ public class WorksController {
 			e.printStackTrace();
 			jsonObject.put("code", "500");
 		}
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	@RequestMapping("/works/insertWorksLog")
+	public void insertMaterialLog(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "worksLog") MultipartFile file) {
+		JSONObject jsonObject = new JSONObject();
+		String schoolIpNum = request.getParameter("schoolIpNum");
+		if (schoolIpNum == null || schoolIpNum.equals("")) {
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "服务器编号为空");
+			ResponseUtil.setResponse(response, jsonObject);
+			return;
+		}
+		SimpleDateFormat dateFormatFile = new SimpleDateFormat("yyyyMMddHHmmss");
+		SimpleDateFormat dateFormatDatabase = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		String date = dateFormatFile.format(new Date());
+		String fileOriName = file.getOriginalFilename();
+		String fileName = fileOriName.substring(0, fileOriName.lastIndexOf(".")) + date + ".log";
+		String filePath = Config.WORKS_LOG_PATH + fileName;
+		File logFile = new File(Config.WORKS_LOG_PATH, fileName);
+		if (!logFile.exists()) {
+			logFile.mkdirs();
+		}
+		try {
+			file.transferTo(logFile);
+			log.info("云服务器接收作品日志成功");
+		} catch (IllegalStateException | IOException e) {
+			log.info("云服务器接收作品日志失败");
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "云服务器接收作品日志失败");
+			e.printStackTrace();
+			ResponseUtil.setResponse(response, jsonObject);
+			return;
+		}
+		try {
+			FileReader fr = new FileReader(filePath);
+			BufferedReader br = new BufferedReader(fr);
+			String line = "";
+			String[] arrs = null;
+			br.readLine();
+			while ((line = br.readLine()) != null) {
+				arrs = line.split("\\s+");
+				WorksLog worksLog = new WorksLog();
+				worksLog.setUserId(Integer.valueOf(arrs[0]));
+				worksLog.setWorksId(Integer.valueOf(arrs[1]));
+				worksLog.setBehaviourType(arrs[2]);
+				worksLog.setNums(Integer.valueOf(arrs[3]));
+				try {
+					worksLog.setOperatingTime(dateFormatDatabase.parse(arrs[4]));
+					worksLog.setInsertTime(dateFormatFile.parse(date));
+				} catch (ParseException e) {
+					e.printStackTrace();
+				}
+				worksLog.setSchoolIpNum(Integer.valueOf(schoolIpNum));
+				worksLogService.insertSelective(worksLog);
+			}
+			br.close();
+			fr.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "插入数据失败");
+			log.info("插入数据失败");
+			ResponseUtil.setResponse(response, jsonObject);
+			return;
+		}
+
+		jsonObject.put("status", "0000");
+		jsonObject.put("info", "读取日志成功");
+		log.info("读取作品日志完毕");
 		ResponseUtil.setResponse(response, jsonObject);
 	}
 }

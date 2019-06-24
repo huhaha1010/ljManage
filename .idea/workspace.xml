@@ -7,52 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4177a90-454c-4981-9f7b-09572a496e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/jackson-annotations-2.4.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/jackson-core-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/jackson-databind-2.4.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ljManage_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ljManage_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Works.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Works.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/WorksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/MaterialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/MaterialController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/WorksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/MaterialMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/MaterialMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/MaterialMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/MaterialMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/WorksMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/WorksMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/WorksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/WorksMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/pojo/Material.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/pojo/Material.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/pojo/Works.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/pojo/Works.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/MaterialService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/MaterialService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/WorksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/WorksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/impl/MaterialServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/impl/MaterialServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/service/impl/WorksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/service/impl/WorksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/MaterialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/MaterialController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Material.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Material.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Works.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Works.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/MaterialService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/MaterialService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/WorksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/WorksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/MaterialServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/MaterialServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/WorksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/WorksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/springmvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="231" column="37" selection-start-line="231" selection-start-column="37" selection-end-line="231" selection-end-column="37" />
+            <state relative-caret-position="401">
+              <caret line="324" column="39" selection-start-line="324" selection-start-column="25" selection-end-line="324" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,46 +53,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Material.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/MaterialLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
-              <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+            <state relative-caret-position="327">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1685#1686#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="2111">
+              <caret line="263" column="39" selection-start-line="263" selection-start-column="39" selection-end-line="263" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,35 +80,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="1017">
+              <caret line="302" column="47" selection-start-line="302" selection-start-column="40" selection-end-line="302" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,22 +92,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/WorksLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+            <state relative-caret-position="1122">
+              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+              <folding>
+                <element signature="e#1493#1494#0" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/PhoneUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="167">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLogMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLogMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialLogMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialLogMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -237,6 +188,8 @@
       <find>list</find>
       <find>delet</find>
       <find>select</find>
+      <find>multipartFile</find>
+      <find>cn</find>
     </findStrings>
     <dirStrings>
       <dir>C:\LJSJ\hhl\ideaWorkspace\ljManage</dir>
@@ -249,22 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application-mapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/EmailUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/LjMaterial.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/LjMaterialMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/LjMaterialController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/LjMaterialController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/MaterialController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/LjMaterialService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/LjMaterialServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/BatchUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/GetClientUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Admin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/AdminMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/AdminServiceImpl.java" />
@@ -272,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/TableDataInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/PageDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/util/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/UserService.java" />
@@ -297,9 +233,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/listen/OnlineUserListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/SessionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/MaterialLogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialLogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/WorksLogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/WorksLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLogMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/MaterialLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialLogMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java" />
       </list>
     </option>
   </component>
@@ -341,14 +294,135 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ljManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ljManage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../generatorSqlmapCustom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mr/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -363,10 +437,10 @@
       <recent name="com.mr.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\LJSJ\hhl\ideaWorkspace\ljManage\src\main\java\com\mr\mapper" />
       <recent name="C:\LJSJ\hhl\ideaWorkspace\ljManage\src\main\java\com\mr\service\impl" />
       <recent name="C:\LJSJ\hhl\ideaWorkspace\ljManage\src\main\java\com\mr\service" />
       <recent name="C:\LJSJ\hhl\ideaWorkspace\ljManage\src\main\java\com\mr\controller" />
-      <recent name="C:\LJSJ\hhl\ideaWorkspace\ljManage\src\main\java\com\mr\mapper" />
       <recent name="C:\LJSJ\hhl\ideaWorkspace\ljManage\src\main\java\com\mr\pojo" />
     </key>
   </component>
@@ -382,7 +456,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.ljManage">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mr.controller.Test" />
+      <module name="ljManage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mr.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.942" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -579,6 +666,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -602,7 +694,8 @@
       <workItem from="1560909101353" duration="21514000" />
       <workItem from="1560995386198" duration="20529000" />
       <workItem from="1561079374162" duration="15504000" />
-      <workItem from="1561098529786" duration="11628000" />
+      <workItem from="1561098529786" duration="11807000" />
+      <workItem from="1561338825333" duration="18164000" />
     </task>
     <task id="LOCAL-00001" summary="1906121748第1次提交">
       <created>1560332932231</created>
@@ -639,11 +732,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561024721831</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="接着增加了作品管理、素材管理功能">
+      <created>1561111040843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561111040844</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192833000" />
+    <option name="totallyTimeSpent" value="211176000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,8 +756,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -668,7 +769,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" visible="true" weight="0.4002169" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" visible="true" weight="0.4002169" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -701,111 +802,10 @@
     <MESSAGE value="增添了用户管理部分功能" />
     <MESSAGE value="接着增加了用户管理功能" />
     <MESSAGE value="接着增加了服务器管理功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="接着增加了服务器管理功能" />
+    <MESSAGE value="接着增加了作品管理、素材管理功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="接着增加了作品管理、素材管理功能" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/BatchUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/PhoneUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/GetClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/config/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/TableDataInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/PageDomain.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/BaseController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/AdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Maven/repository/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Maven/repository/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -919,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2354">
-          <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -961,16 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="600" column="10" selection-start-line="600" selection-start-column="9" selection-end-line="600" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -998,44 +981,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
+        <state relative-caret-position="2486">
           <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1044,8 +993,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="330">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1054,21 +1003,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
+        <state relative-caret-position="682">
           <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
+        <state relative-caret-position="88">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1078,35 +1025,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="2112">
           <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/listen/OnlineUserListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="231" column="37" selection-start-line="231" selection-start-column="37" selection-end-line="231" selection-end-column="37" />
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1115,8 +1052,221 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+        <state relative-caret-position="345">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/MaterialLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/WorksLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/WorksLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/util/PhoneUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2111">
+          <caret line="263" column="39" selection-start-line="263" selection-start-column="39" selection-end-line="263" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/WorksLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+          <folding>
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/WorksLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/pojo/MaterialLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/WorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="324" column="39" selection-start-line="324" selection-start-column="25" selection-end-line="324" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1017">
+          <caret line="302" column="47" selection-start-line="302" selection-start-column="40" selection-end-line="302" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,4 +14,8 @@ public class Config {
     public static final String JSONFILE_PATH = "C://test4All//test4JsonFile//";
 
     public static final String MATERIAL_JSONFILE_PATH = "C://test4All//test4MaterialJsonFile//";
+
+    public static final String MATERIAL_LOG_PATH = "C://test4All//test4MaterialLog//";
+
+    public static final String WORKS_LOG_PATH = "C://test4All//test4WorksLog//";
 }
