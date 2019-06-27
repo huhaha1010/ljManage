@@ -56,5 +56,6 @@
         <aop:pointcut expression="execution(* com.mr.service.impl.*.*(..))" id="mypointer"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="mypointer"/>
     </aop:config>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 
 </beans>

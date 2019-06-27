@@ -138,6 +138,7 @@ public class UserController {
         } else {
             log.info("登录成功");
             session.setAttribute("userId", user.getUserId());
+            jsonObject.put("userId", user.getUserId());
             jsonObject.put("status", "0000");
             jsonObject.put("info", "登录成功");
         }

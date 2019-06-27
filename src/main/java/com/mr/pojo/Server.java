@@ -9,6 +9,8 @@ public class Server {
 
     private Integer serverCompanyId;
 
+    private Integer serverState;
+
     public Integer getServerId() {
         return serverId;
     }
@@ -39,5 +41,13 @@ public class Server {
 
     public void setServerCompanyId(Integer serverCompanyId) {
         this.serverCompanyId = serverCompanyId;
+    }
+
+    public Integer getServerState() {
+        return serverState;
+    }
+
+    public void setServerState(Integer serverState) {
+        this.serverState = serverState;
     }
 }

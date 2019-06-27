@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mr.mapper.ServerLogMapper" >
+    <resultMap id="BaseResultMap" type="com.mr.pojo.ServerLog" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="server_id" property="serverId" jdbcType="INTEGER" />
+        <result column="behavior" property="behavior" jdbcType="INTEGER" />
+        <result column="admin_name" property="adminName" jdbcType="VARCHAR" />
+        <result column="operating_time" property="operatingTime" jdbcType="TIMESTAMP" />
+        <result column="state" property="state" jdbcType="INTEGER" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+    id, server_id, behavior, admin_name, operating_time, state, update_time
+  </sql>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from server_log
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from server_log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+    <insert id="insertSelective" parameterType="com.mr.pojo.ServerLog" >
+        insert into server_log
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="serverId != null" >
+                server_id,
+            </if>
+            <if test="behavior != null" >
+                behavior,
+            </if>
+            <if test="adminName != null" >
+                admin_name,
+            </if>
+            <if test="operatingTime != null" >
+                operating_time,
+            </if>
+            <if test="state != null" >
+                state,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="serverId != null" >
+                #{serverId,jdbcType=INTEGER},
+            </if>
+            <if test="behavior != null" >
+                #{behavior,jdbcType=INTEGER},
+            </if>
+            <if test="adminName != null" >
+                #{adminName,jdbcType=INTEGER},
+            </if>
+            <if test="operatingTime != null" >
+                #{operatingTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="state != null" >
+                #{state,jdbcType=INTEGER},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.mr.pojo.ServerLog" >
+        update server_log
+        <set >
+            <if test="serverId != null" >
+                server_id = #{serverId,jdbcType=INTEGER},
+            </if>
+            <if test="behavior != null" >
+                behavior = #{behavior,jdbcType=INTEGER},
+            </if>
+            <if test="adminName != null" >
+                admin_name = #{adminName,jdbcType=INTEGER},
+            </if>
+            <if test="operatingTime != null" >
+                operating_time = #{operatingTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="state != null" >
+                state = #{state,jdbcType=INTEGER},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateByPrimaryKey" parameterType="com.mr.pojo.ServerLog" >
+    update server_log
+    set server_id = #{serverId,jdbcType=INTEGER},
+      behavior = #{behavior,jdbcType=INTEGER},
+      admin_name = #{adminName,jdbcType=INTEGER},
+      operating_time = #{operatingTime,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+    <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from server_log
+        where server_id = #{serverId,jdbcType=INTEGER}
+        and state = 0
+    </select>
+</mapper>

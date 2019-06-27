@@ -37,7 +37,14 @@ public class ServerController {
 	@RequestMapping("/server/selectIpById")
 	public void selectById(HttpServletRequest request, HttpServletResponse response) {
 		JSONObject jsonObject = new JSONObject();
-		int serverId = Integer.valueOf(request.getParameter("serverId"));
+		String serverIdStr = request.getParameter("serverId");
+		if (serverIdStr == null || serverIdStr.equals("")) {
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "serverId为空");
+			ResponseUtil.setResponse(response, jsonObject);
+			return;
+		}
+		int serverId = Integer.valueOf(serverIdStr);
 		try {
 			Server server = serverService.selectById(serverId);
 			log.info("查询服务器ip成功");

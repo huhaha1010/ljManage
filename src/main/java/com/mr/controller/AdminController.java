@@ -1,6 +1,7 @@
 package com.mr.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mr.annotation.isLogin;
 import com.mr.pojo.Admin;
 import com.mr.service.AdminService;
 import com.mr.util.ResponseUtil;
@@ -20,6 +21,7 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
+    @isLogin(description = "")
     @RequestMapping("/admin/login")
     public void login(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
@@ -49,6 +51,7 @@ public class AdminController {
         log.info("开始获取用户");
         JSONObject jsonObject = new JSONObject();
         HttpSession session = request.getSession();
+        log.info("sessionId=" + session.getId());
         String adminName = null;
         try {
             adminName = session.getAttribute("adminName").toString();

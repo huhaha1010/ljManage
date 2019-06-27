@@ -16,4 +16,10 @@ public class AdminServiceImpl implements AdminService {
         Admin adminRes = adminMapper.selectByAdmin(admin);
         return adminRes != null;
     }
+
+    @Override
+    public Admin selectAdmin(Admin admin) {
+        Admin adminRes = adminMapper.selectByAdmin(admin);
+        return adminRes;
+    }
 }
