@@ -1,6 +1,7 @@
 package com.mr.service.impl;
 
 import com.mr.mapper.ServerLogMapper;
+import com.mr.pojo.Server;
 import com.mr.pojo.ServerLog;
 import com.mr.service.ServerLogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,8 @@ public class ServerLogServiceImpl implements ServerLogService {
     private ServerLogMapper serverLogMapper;
 
     @Override
-    public ServerLog selectById(Integer serverId) {
-        ServerLog serverLog = serverLogMapper.selectById(serverId);
+    public ServerLog selectByServerId(Integer serverId) {
+        ServerLog serverLog = serverLogMapper.selectByServerId(serverId);
         return serverLog;
     }
 
@@ -25,5 +26,11 @@ public class ServerLogServiceImpl implements ServerLogService {
     @Override
     public void insertServerLog(ServerLog serverLog) {
         serverLogMapper.insertSelective(serverLog);
+    }
+
+    @Override
+    public ServerLog selectByPrimaryKey(Integer id) {
+        ServerLog serverLog = serverLogMapper.selectByPrimaryKey(id);
+        return serverLog;
     }
 }

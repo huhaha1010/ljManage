@@ -10,10 +10,14 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="com.mr.controller"></context:component-scan>
+    <context:component-scan base-package="com.mr.interceptor"></context:component-scan>
     <mvc:annotation-driven />
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="defaultEncoding" value="utf-8" />
         <property name="maxUploadSize" value="819430400" />
         <property name="maxInMemorySize" value="81920" />
     </bean>
+    <mvc:interceptors>
+            <bean class="com.mr.interceptor.CheckUserLoginInterceptor"/>
+    </mvc:interceptors>
 </beans>

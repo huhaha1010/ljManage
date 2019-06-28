@@ -1,6 +1,7 @@
 package com.mr.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mr.annotation.IsCheckUserLogin;
 import com.mr.pojo.Server;
 import com.mr.pojo.ServerLog;
 import com.mr.service.ServerLogService;
@@ -28,6 +29,7 @@ public class ServerLogController {
     @Autowired
     private ServerService serverService;
 
+    @IsCheckUserLogin(check = true)
     @RequestMapping("/serverLog/insertServerLog")
     public void insertServerLog(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
@@ -37,7 +39,7 @@ public class ServerLogController {
         log.info("serverLog中sessionId=" + session.getId());
         String adminName = session.getAttribute("adminName").toString();
         log.info("adminName=" + adminName);
-        ServerLog serverLog = serverLogService.selectById(serverId);
+        ServerLog serverLog = serverLogService.selectByServerId(serverId);
         if (serverLog != null) {
             log.info("操作日志中还有命令未执行");
             jsonObject.put("code", "301");
@@ -86,7 +88,7 @@ public class ServerLogController {
     public void selectServerLog(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
         Integer serverId = Integer.valueOf(request.getParameter("serverId"));
-        ServerLog serverLog = serverLogService.selectById(serverId);
+        ServerLog serverLog = serverLogService.selectByServerId(serverId);
         if (serverLog == null) {
             log.info("操作日志中没有命令需要执行");
             jsonObject.put("status", "0001");
@@ -109,6 +111,10 @@ public class ServerLogController {
         Integer id = Integer.valueOf(request.getParameter("id"));
         Integer serverId = Integer.valueOf(request.getParameter("serverId"));
         Integer serverState = Integer.valueOf(request.getParameter("serverState"));
+        ServerLog serverLogSel = serverLogService.selectByPrimaryKey(id);
+        if (serverLogSel.getBehavior() == serverState) {
+            log.info("操作已执行，无需再次执行");
+        }
         ServerLog serverLog = new ServerLog();
         serverLog.setId(id);
         serverLog.setState(1);
@@ -122,9 +128,6 @@ public class ServerLogController {
             ResponseUtil.setResponse(response, jsonObject);
             return;
         }
-        Server server = new Server();
-        server.setServerId(serverId);
-        server.setServerState(serverState);
         try {
             serverLogService.updateById(serverLog);
         } catch (Exception e) {

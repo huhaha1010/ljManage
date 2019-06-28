@@ -1,7 +1,7 @@
 package com.mr.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.mr.annotation.isLogin;
+import com.mr.annotation.IsCheckUserLogin;
 import com.mr.pojo.Admin;
 import com.mr.service.AdminService;
 import com.mr.util.ResponseUtil;
@@ -21,7 +21,6 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    @isLogin(description = "")
     @RequestMapping("/admin/login")
     public void login(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
@@ -46,6 +45,7 @@ public class AdminController {
         ResponseUtil.setResponse(response, jsonObject);
     }
 
+    @IsCheckUserLogin(check = true)
     @RequestMapping("/admin/getAdminSession")
     public void getAdminSession(HttpServletRequest request, HttpServletResponse response) {
         log.info("开始获取用户");

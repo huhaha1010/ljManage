@@ -111,7 +111,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-    <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <select id="selectByServerId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from server_log
