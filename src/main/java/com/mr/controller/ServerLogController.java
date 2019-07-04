@@ -104,7 +104,7 @@ public class ServerLogController {
     }
 
     @RequestMapping("/serverLog/updateLog")
-    public void updateLogAndServer(HttpServletRequest request, HttpServletResponse response) {
+    public void updateLog(HttpServletRequest request, HttpServletResponse response) {
         JSONObject jsonObject = new JSONObject();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String date = simpleDateFormat.format(new Date());
