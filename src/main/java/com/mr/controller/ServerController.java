@@ -143,7 +143,7 @@ public class ServerController {
 			jsonObject.put("server", server);
 		} else {
 			jsonObject.put("status", "0001");
-			jsonObject.put("info", "用户不存在");
+			jsonObject.put("info", "服务器不存在");
 		}
 		ResponseUtil.setResponse(response, jsonObject);
 	}
@@ -275,11 +275,13 @@ public class ServerController {
 		log.info("serverName:" + serverName);
 		String serverIp = request.getParameter("serverIp");
 		Integer serverCompanyId = Integer.valueOf(request.getParameter("serverCompanyId"));
+		Integer maxNum = Integer.valueOf(request.getParameter("maxNum"));
 		Server server = new Server();
 		server.setServerId(serverId);
 		server.setServerName(serverName);
 		server.setServerIp(serverIp);
 		server.setServerCompanyId(serverCompanyId);
+		server.setMaxNum(maxNum);
 		try {
 			serverService.updateById(server);
 			jsonObject.put("code", "0");
@@ -287,6 +289,24 @@ public class ServerController {
 		} catch (Exception e) {
 			e.printStackTrace();
 			jsonObject.put("code", "500");
+		}
+		ResponseUtil.setResponse(response, jsonObject);
+	}
+
+	@RequestMapping("/server/selectMaxNum")
+	public void selectMaxNum(HttpServletRequest request, HttpServletResponse response) {
+		JSONObject jsonObject = new JSONObject();
+		Integer serverId = Integer.valueOf(request.getParameter("serverId"));
+		Server server = serverService.selectById(serverId);
+		if (server == null) {
+			log.info("服务器不存在");
+			jsonObject.put("status", "0001");
+			jsonObject.put("info", "服务器不存在");
+		} else {
+			log.info("查询最大使用人数成功");
+			jsonObject.put("status", "0000");
+			jsonObject.put("info", "查询成功");
+			jsonObject.put("maxNum", server.getMaxNum());
 		}
 		ResponseUtil.setResponse(response, jsonObject);
 	}

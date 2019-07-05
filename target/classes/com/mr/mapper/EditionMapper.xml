@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mr.mapper.EditionMapper">
+  <resultMap id="BaseResultMap" type="com.mr.pojo.Edition">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="project_url" jdbcType="VARCHAR" property="projectUrl" />
+    <result column="file_url" jdbcType="VARCHAR" property="fileUrl" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, description, type, project_url, file_url, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from edition
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from edition
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mr.pojo.Edition">
+    insert into edition (id, name, description, 
+      type, project_url, file_url, 
+      create_time)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
+      #{type,jdbcType=INTEGER}, #{projectUrl,jdbcType=VARCHAR}, #{fileUrl,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.mr.pojo.Edition">
+    insert into edition
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="projectUrl != null">
+        project_url,
+      </if>
+      <if test="fileUrl != null">
+        file_url,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="projectUrl != null">
+        #{projectUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="fileUrl != null">
+        #{fileUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mr.pojo.Edition">
+    update edition
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="projectUrl != null">
+        project_url = #{projectUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="fileUrl != null">
+        file_url = #{fileUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+<!--  根据服务器id查询时间最近的版本-->
+  <select id="selectByServerId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from edition
+    where type = #{type,jdbcType=INTEGER}
+    order by create_time
+    desc
+    limit 0,1
+  </select>
+
+  <select id="selectEditionList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from edition
+    where 1 = 1
+    <if test="param1.id != null and param1.id != ''">
+      and id like concat('%', #{param1.id,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="param1.name != null and param1.name != ''">
+      and name like concat('%', #{param1.name,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="param1.type != null and param1.type != ''">
+      and type like concat('%', #{param1.type,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="param2 != null and param2 != ''">
+      and date_format(create_time, '%y%m%d') &gt;= date_format(#{param2}, '%y%m%d')
+    </if>
+    <if test="param3 != null and param2 != ''">
+      and date_format(create_time,'%y%m%d') &lt;= date_format(#{param3},'%y%m%d')
+    </if>
+  </select>
+
+  <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from edition
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <update id="updateById" parameterType="com.mr.pojo.Edition">
+        update edition
+        set name = #{name,jdbcType=VARCHAR},
+        description = #{description,jdbcType=VARCHAR},
+        type = #{type,jdbcType=INTEGER},
+        project_url = #{projectUrl,jdbcType=VARCHAR},
+        file_url = #{fileUrl,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+  <delete id="deleteListById" parameterType="java.util.List">
+    delete from edition
+    where id in
+    <foreach collection="list" index="index" item="item" open="(" close=")" separator=",">
+      #{item}
+    </foreach>
+  </delete>
+</mapper>

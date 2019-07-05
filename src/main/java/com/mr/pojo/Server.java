@@ -11,6 +11,8 @@ public class Server {
 
     private Integer serverState;
 
+    private Integer maxNum;
+
     public Integer getServerId() {
         return serverId;
     }
@@ -49,5 +51,13 @@ public class Server {
 
     public void setServerState(Integer serverState) {
         this.serverState = serverState;
+    }
+
+    public Integer getMaxNum() {
+        return maxNum;
+    }
+
+    public void setMaxNum(Integer maxNum) {
+        this.maxNum = maxNum;
     }
 }

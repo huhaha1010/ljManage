@@ -7,10 +7,11 @@
     <result column="server_ip" property="serverIp" jdbcType="VARCHAR" />
     <result column="server_company_id" property="serverCompanyId" jdbcType="INTEGER" />
     <result column="server_state" property="serverState" jdbcType="INTEGER" />
+    <result column="max_num" property="maxNum" jdbcType="INTEGER" />
   </resultMap>
 
   <sql id="Base_Column_List" >
-    server_id, server_name, server_ip, server_company_id, server_state
+    server_id, server_name, server_ip, server_company_id, server_state, max_num
   </sql>
 
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -58,9 +59,42 @@
     where server_id = #{serverId,jdbcType=INTEGER}
   </delete>
 
-  <insert id="insertSelective" parameterType="com.mr.pojo.Server">
-    insert into server(server_name,server_ip,server_company_id)
-    values (#{serverName,jdbcType=VARCHAR},#{serverIp,jdbcType=VARCHAR},#{serverCompanyId,jdbcType=INTEGER})
+  <insert id="insertSelective" parameterType="com.mr.pojo.Server" >
+    insert into server
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="serverId != null" >
+        server_id,
+      </if>
+      <if test="serverName != null" >
+        server_name,
+      </if>
+      <if test="serverIp != null" >
+        server_ip,
+      </if>
+      <if test="serverCompanyId != null" >
+        server_company_id,
+      </if>
+      <if test="maxNum != null">
+        max_num,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="serverId != null" >
+        #{serverId,jdbcType=INTEGER},
+      </if>
+      <if test="serverName != null" >
+        #{serverName,jdbcType=VARCHAR},
+      </if>
+      <if test="serverIp != null" >
+        #{serverIp,jdbcType=VARCHAR},
+      </if>
+      <if test="serverCompanyId != null" >
+        #{serverCompanyId,jdbcType=INTEGER},
+      </if>
+      <if test="maxNum != null">
+        #{maxNum,jdbcType=INTEGER},
+      </if>
+    </trim>
   </insert>
 
   <delete id="deleteListById" parameterType="java.util.List">
@@ -85,6 +119,9 @@
       </if>
       <if test="serverState != null" >
         server_state = #{serverState,jdbcType=INTEGER},
+      </if>
+      <if test="maxNum != null">
+        max_num = #{maxNum,jdbcType=INTEGER},
       </if>
     </set>
     where server_id = #{serverId,jdbcType=INTEGER}
