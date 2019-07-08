@@ -7,46 +7,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4177a90-454c-4981-9f7b-09572a496e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/EditionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/EditionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/EditionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Edition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/EditionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/service/impl/EditionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/EditionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/EditionMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/EditionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/pojo/Edition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/service/EditionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/service/impl/EditionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/EditionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/EditionMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/EditionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Edition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/EditionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/EditionServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mr/pojo/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/config/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/MaterialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/MaterialController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/ServerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/controller/WorksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/mapper/ServerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/pojo/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/pojo/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mr/util/PhoneUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mr/util/PhoneUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/config/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/MaterialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/MaterialController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/ServerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/PhoneUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/PhoneUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/META-INF/ljManage.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/application-mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/annotation/IsCheckUserLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/config/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/EditionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/MaterialController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/ServerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/ServerLogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/controller/WorksController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/interceptor/CheckUserLoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/AdminMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/AdminMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/EditionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/EditionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/MaterialMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/ServerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/mapper/WorksMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Edition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Material.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/MaterialLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/ServerLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/Works.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/pojo/WorksLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/EditionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/MaterialLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/MaterialService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/ServerLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/ServerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/WorksLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/WorksService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/EditionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/MaterialLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/MaterialServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/ServerLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/ServerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/WorksLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/service/impl/WorksServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/EmailUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/GetClientUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/PhoneUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/ResponseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/SessionUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/SessionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/com/mr/util/SimpleAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/aspectjweaver-1.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/commons-fileupload-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/fastjson-1.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/jackson-annotations-2.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/jackson-core-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/jackson-databind-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/mail-1.5.0-b01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/mybatis-3.2.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/mybatis-spring-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/mysql-connector-java-5.1.38.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/servlet-api-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-aop-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-beans-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-context-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-core-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-expression-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-jdbc-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-tx-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-web-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/lib/spring-webmvc-4.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ljManage/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,11 +135,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/EditionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+            <state relative-caret-position="-518">
+              <caret line="112" column="45" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/config/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,19 +178,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/EditionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="167">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1125#1126#0" expanded="true" />
@@ -137,7 +218,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
-              <caret line="101" column="13" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="101" selection-end-column="13" />
+              <caret line="101" column="13" selection-start-line="95" selection-start-column="4" selection-end-line="101" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -146,31 +227,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/MaterialController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="254" column="5" lean-forward="true" selection-start-line="237" selection-start-column="4" selection-end-line="254" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/EditionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -202,7 +259,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>insert</find>
       <find>add</find>
       <find>checkUserNameUnique</find>
       <find>dateFormat</find>
@@ -232,6 +288,7 @@
       <find>updateById</find>
       <find>deleteListById</find>
       <find>dele</find>
+      <find>delete</find>
     </findStrings>
     <dirStrings>
       <dir>C:\LJSJ\hhl\ideaWorkspace\ljManage</dir>
@@ -282,10 +339,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/interceptor/CheckUserLoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerLogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Edition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/pojo/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/ServerMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/ServerController.java" />
@@ -295,6 +350,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mr/mapper/EditionMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/EditonController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mr/controller/EditionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mr/config/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -343,7 +400,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mr/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../apache-tomcat-7.0.94-windows-x64/apache-tomcat-7.0.94/conf/Catalina/localhost" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -514,7 +571,7 @@
       </method>
     </configuration>
     <configuration name="ljManage" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.942" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ljManage" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/ljManage" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -526,6 +583,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_942_ljManage_3" />
+        <option name="HTTP_PORT" value="8090" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -587,6 +645,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Tomcat Server.ljManage" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
@@ -618,7 +680,7 @@
       <workItem from="1561098529786" duration="11807000" />
       <workItem from="1561338825333" duration="27545000" />
       <workItem from="1561515257204" duration="3369000" />
-      <workItem from="1561602884798" duration="99977000" />
+      <workItem from="1561602884798" duration="107846000" />
     </task>
     <task id="LOCAL-00001" summary="1906121748第1次提交">
       <created>1560332932231</created>
@@ -697,11 +759,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562233975478</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加版本控制">
+      <created>1562319791068</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562319791068</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323903000" />
+    <option name="totallyTimeSpent" value="331772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -765,7 +834,8 @@
     <MESSAGE value="增加了通过注解进行登录状态的判断" />
     <MESSAGE value="忘了修改什么" />
     <MESSAGE value="最新版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="最新版本" />
+    <MESSAGE value="添加版本控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加版本控制" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/WorksLogService.java">
@@ -973,13 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-start-column="1" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1001,16 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,13 +1115,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/config/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1171,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/MaterialService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="44" />
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1155,7 +1201,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/service/impl/EditionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1125#1126#0" expanded="true" />
@@ -1169,7 +1215,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="44" />
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1232,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/mapper/MaterialMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
-          <caret line="101" column="13" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="101" selection-end-column="13" />
+          <caret line="101" column="13" selection-start-line="95" selection-start-column="4" selection-end-line="101" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1197,13 +1243,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/EditionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/config/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        <state relative-caret-position="175">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mr/controller/EditionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="112" column="45" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1220,7 +1290,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

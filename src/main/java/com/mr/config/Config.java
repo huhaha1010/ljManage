@@ -25,7 +25,7 @@ public class Config {
     //版本更新上传的其他文件服务器中的路径
     public static final String OTHER_FILE_PATH = "C://test4All//test4OtherFile//";
 
-    public static final String PROJECT_FILE_URL = "http://10.10.10.10:8080/server/projectFile/";
+    public static final String PROJECT_FILE_URL = "http://192.168.1.109:8080/server/";
 
     public static final String OTHER_FILE_URL = "http://10.10.10.10:8080/server/otherFile/";
 }
