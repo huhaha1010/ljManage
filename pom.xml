@@ -22,7 +22,7 @@
     <servlet.version>2.5</servlet.version>
     <log4j.version>1.2.17</log4j.version>
     <mybatis.version>3.2.7</mybatis.version>
-    <mysql.connector.java.version>5.1.38</mysql.connector.java.version>
+    <mysql.connector.java.version>8.0.16</mysql.connector.java.version>
     <mybatis.spring.version>1.2.3</mybatis.spring.version>
     <aspectjweaver.version>1.8.6</aspectjweaver.version>
     <commons.fileupload.version>1.3</commons.fileupload.version>
